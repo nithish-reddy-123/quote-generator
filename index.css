@@ -114,3 +114,49 @@ h1 {
         font-size: 1rem;
     }
 }
+/* --- Add this to your existing style.css --- */
+
+/* --- Interests Section Styling --- */
+.interests-container {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.interests-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #444;
+}
+
+.interest-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds space between buttons */
+}
+
+.interest-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 2px solid #ddd;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.interest-btn:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+}
+
+/* --- Style for the active interest button --- */
+.interest-btn.active {
+    background-image: linear-gradient(to right, #667eea, #764ba2);
+    color: #fff;
+    border-color: #667eea;
+}
