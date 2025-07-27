@@ -1,0 +1,116 @@
+/* --- Google Font and Global Styles --- */
+body {
+    font-family: 'Montserrat', sans-serif; /* Using the imported Google Font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Adding a subtle gradient background */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    transition: background-color 0.5s ease;
+}
+
+/* --- Main Container Styling --- */
+.container {
+    width: 90%;
+    max-width: 700px; /* Increased max-width for a more spacious feel */
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px; /* Softer rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* A more pronounced shadow */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+/* --- Header Styling --- */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700; /* Bolder font weight for the title */
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* --- Quote Box --- */
+.quote-box {
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-left: 8px solid #667eea; /* A stylish left border */
+    margin-bottom: 30px;
+    border-radius: 8px;
+    text-align: left; /* Left-align text for better readability */
+}
+
+/* --- Quote Text Styling --- */
+#quote {
+    font-size: 1.75rem;
+    line-height: 1.5;
+    margin-bottom: 15px; /* Spacing between quote and author */
+    font-weight: 400;
+}
+
+#quote::before {
+    content: '“'; /* Adding quotation marks for style */
+    font-size: 3rem;
+    color: #667eea;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+/* --- Author Styling --- */
+#author {
+    display: block;
+    text-align: right; /* Align author to the right */
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 700;
+    color: #764ba2;
+}
+
+/* --- New Quote Button --- */
+#new-quote-btn {
+    background-image: linear-gradient(to right, #667eea, #764ba2);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 700; /* Bolder text on the button */
+    cursor: pointer;
+    border-radius: 50px; /* A pill-shaped button */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    outline: none; /* Removes the default outline */
+}
+
+#new-quote-btn:hover {
+    transform: translateY(-3px); /* Button moves up slightly on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+#new-quote-btn:active {
+    transform: translateY(-1px); /* A subtle press-down effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Media Query for Responsiveness --- */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #quote {
+        font-size: 1.25rem;
+    }
+
+    #author {
+        font-size: 1rem;
+    }
+}
