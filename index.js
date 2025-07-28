@@ -101,8 +101,7 @@ const authorText = document.getElementById('author');
 const newQuoteBtn = document.getElementById('new-quote-btn');
 const interestButtons = document.querySelectorAll('.interest-btn');
 
-// State variable to keep track of the current interest
-let currentInterest = 'inspirational'; // Default interest
+let currentInterest = 'inspirational'; 
 
 // --- Functions ---
 
